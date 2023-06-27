@@ -1,16 +1,18 @@
 "use client" // this is a client component
-import React from "react"
+import React, { useState } from "react"
 import Image from "next/image"
 import { Link } from "react-scroll/modules"
 import { HiArrowDown } from "react-icons/hi"
+import { useLanguage } from "@/hooks/useLanguage"
 
-const HeroSection = () => {
+export default function HeroSection() {
+  const { isEnglish } = useLanguage()
   return (
     <section id="home">
       <div className="flex flex-col text-center items-center justify-center animate-fadeIn animation-delay-2 my-10 py-16 sm:py-32 md:py-48 md:flex-row md:space-x-4 md:text-left">
         <div className="md:mt-2 md:w-1/2">
           <Image
-            src="/headshot.png"
+            src="/headshot.jpg"
             alt=""
             width={325}
             height={325}
@@ -18,14 +20,13 @@ const HeroSection = () => {
           />
         </div>
         <div className="md:mt-2 md:w-3/5">
-          <h1 className="text-4xl font-bold mt-6 md:mt-0 md:text-7xl">Hi, I&#39;m Hosna!</h1>
+          <h1 className="text-4xl font-bold mt-6 md:mt-0 md:text-7xl">{isEnglish ? "Hi, I'm João!" : "Olá, eu sou o João!"}</h1>
           <p className="text-lg mt-4 mb-6 md:text-2xl">
-            I&#39;m a{" "}
+            {isEnglish ? " I'm a" : "Sou um"}{" "}
             <span className="font-semibold text-teal-600">
-              Software Engineer{" "}
+              {isEnglish ? "Software Engineer" : "Engenheiro de Software"}{" "}
             </span>
-            based in Los Angeles, CA. Working towards creating software that
-            makes life easier and more meaningful.
+            {isEnglish ? "based in Rio de Janeiro, Brasil. Working towards creating software thatmakes life easier and more meaningful." : "do Rio de Janeiro, Brasil. Trabalho para criar softwares que tornem a vida mais fácil e significativa."}
           </p>
           <Link
             to="projects"
@@ -55,5 +56,3 @@ const HeroSection = () => {
     </section>
   )
 }
-
-export default HeroSection
