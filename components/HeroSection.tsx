@@ -26,7 +26,7 @@ export default function HeroSection() {
             <span className="font-semibold text-teal-600">
               {isEnglish ? "Software Engineer" : "Engenheiro de Software"}{" "}
             </span>
-            {isEnglish ? "based in Rio de Janeiro, Brasil. Working towards creating software thatmakes life easier and more meaningful." : "do Rio de Janeiro, Brasil. Trabalho para criar softwares que tornem a vida mais fácil e significativa."}
+            {isEnglish ? "based in Rio de Janeiro, Brasil. Working towards creating software that makes life easier and more meaningful." : "do Rio de Janeiro, Brasil. Trabalho para criar softwares que tornem a vida mais fácil e significativa."}
           </p>
           <Link
             to="projects"

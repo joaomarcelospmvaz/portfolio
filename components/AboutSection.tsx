@@ -35,8 +35,8 @@ const AboutSection = () => {
             <p>
               {isEnglish ? "Hi, my name is João and I am a" : "Olá, meu nome é João e eu sou um Engenheiro de Software "}{" "}
               <span className="font-bold">{isEnglish ? "highly ambitious" : "ambicioso"}</span>,
-              <span className="font-bold">{isEnglish ? " self-motivated" : " autodisciplinado "}</span>, {isEnglish ? "and" : "e"}
-              <span className="font-bold">{isEnglish ? " driven" : " muito focado"}</span> {isEnglish ? "software engineer based in Los Angeles, CA." : "engenheiro de software, morador do Rio de Janeiro, Brasil."}
+              <span className="font-bold">{isEnglish ? " self-motivated" : " autodisciplinado "}</span> {isEnglish ? "and" : "e"}
+              <span className="font-bold">{isEnglish ? " driven" : " muito focado,"}</span> {isEnglish ? "software engineer based in Rio de Janeiro, Brasil." : "morador do Rio de Janeiro, Brasil."}
             </p>
             <br />
             <p>
@@ -44,7 +44,7 @@ const AboutSection = () => {
             </p>
             <br />
             <p>
-              {isEnglish ? "I have a wide range of hobbies and passions that keep me busy. From reading, playing sports, traveling, to games, I am always seeking new experiences and love to keep myself engaged and learning new things." : "Eu tenho uma ampla variedade de hobbies e paixões que me mantêm ocupado. Desde a leitura, prática de esportes, viagens, até jogos, sempre estou em busca de novas experiências e adoro me manter envolvido e aprendendo coisas novas."}
+              {isEnglish ? "I have a wide range of hobbies and passions that keep me busy. From reading, playing sports, traveling, to games, I am always seeking new experiences and love to keep myself engaged and learning new things." : "Eu tenho uma ampla variedade de hobbies e paixões que me mantém ocupado. Desde a leitura, prática de esportes, viagens, até jogos, sempre estou em busca de novas experiências e adoro me manter envolvido e aprendendo coisas novas."}
             </p>
             <br />
             <p>
@@ -52,7 +52,7 @@ const AboutSection = () => {
               <span className="font-bold text-teal-500">
                 {isEnglish ? "never stop growing" : "nunca se deve parar de crescer"}
               </span>{isEnglish ? " " : ""}
-              {isEnglish ? "and that&#39;s what I strive to do, I have a passion for technology and a desire to always push the limits of what is possible. I am excited to see where my career takes me and am always open to new opportunities. 🚀" : ", e é isso que me esforço para fazer. Tenho paixão por tecnologia e um desejo constante de ultrapassar os limites do que é possível. Estou empolgado para ver onde minha carreira me levará e estou sempre aberto a novas oportunidades. 🚀"}
+              {isEnglish ? "and that's what I strive to do, I have a passion for technology and a desire to always push the limits of what is possible. I am excited to see where my career takes me and am always open to new opportunities. 🚀" : ", e é isso que me esforço para fazer. Tenho paixão por tecnologia e um desejo constante de ultrapassar os limites do que é possível. Estou empolgado para ver onde minha carreira me levará e estou sempre aberto a novas oportunidades. 🚀"}
             </p>
           </div>
           <div className="text-center md:w-1/2 md:text-left">

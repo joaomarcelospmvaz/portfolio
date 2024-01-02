@@ -2,7 +2,6 @@
 import React from "react"
 import { useState } from "react"
 import { Link } from "react-scroll/modules"
-import { usePathname } from "next/navigation"
 import { useTheme } from "next-themes"
 import { RiMoonFill, RiSunLine } from "react-icons/ri"
 import { IoMdMenu, IoMdClose } from "react-icons/io"
@@ -36,7 +35,6 @@ export default function Navbar() {
   const { systemTheme, theme, setTheme } = useTheme()
   const currentTheme = theme === "system" ? systemTheme : theme
   const { isEnglish, changeLanguage } = useLanguage()
-  const pathname = usePathname()
   const [navbar, setNavbar] = useState(false)
   return (
     <header className="w-full mx-auto px-4 sm:px-20 fixed top-0 z-50 shadow bg-white dark:bg-stone-900 dark:border-b dark:border-stone-600">
@@ -61,7 +59,7 @@ export default function Navbar() {
 
         <div>
           <div
-            className={`h-80 md:h-auto flex-1 justify-self-center pb-2 mt-4 md:block md:pb-1 md:mt-0 ${navbar ? "block" : "hidden"
+            className={`h-80 md:h-auto flex-1 justify-self-center pb-2 mt-4 md:block md:pb-1 md:mt-0 ${navbar ? "block" : "hidden" 
               }`}
           >
             <div className="flex flex-col items-center justify-center space-y-8 md:flex-row md:space-x-6 md:space-y-0">
